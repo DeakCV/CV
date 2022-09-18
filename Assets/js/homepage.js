@@ -10,8 +10,8 @@ document.addEventListener('alpine:init', () => {
         RenderComponents(){
             axios.all([
                 //adjust for prod
-                axios.get('/DeakCV/CV/wwwroot/Assets/data/contents.json'), 
-                axios.get('/DeakCV/CV/wwwroot/Assets/data/contents-1.json')
+                axios.get('/Assets/data/contents.json'), 
+                axios.get('/Assets/data/contents-1.json')
               ])
               .then(axios.spread((ResponseOne, ResponseTwo) => {
                 var converter = new showdown.Converter();    
