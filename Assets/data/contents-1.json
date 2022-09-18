@@ -2,7 +2,7 @@
   "PanelList": [
     {
       "PanelTitle": "About",
-      "PanelText": "#### Name**:** Laszlo Deac\n\n\n\n#### Nationality: Hungarian and Romanian\n\n\n\n#### ADDRESS:\n\nYeovil, Somerset\nBA20 1BU\nUnited Kingdom\n\n\n\n#### PHONE: [+447450233267](tel:07450233267)\n\n\n\n#### EMAIL: [deaclaszlo@gmail.com](mailto:deaclaszlo@gmail.com)",
+      "PanelText": "#### Name**:** Laszlo Deac\n\n\n\n\n\n#### Nationality: Hungarian and Romanian\n\n\n\n\n\n#### ADDRESS: Yeovil, Somerset, BA20 1BU, United Kingdom\n\n\n\n\n\n#### PHONE: [+447450233267](tel:07450233267)\n\n\n\n\n\n#### EMAIL: [deaclaszlo@gmail.com](mailto:deaclaszlo@gmail.com)",
       "PanelType": "ImageLeft",
       "PanelImage": "https://cdn.pixabay.com/photo/2018/02/26/22/17/machine-3184176_960_720.jpg"
     },
