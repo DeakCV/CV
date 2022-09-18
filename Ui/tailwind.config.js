@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    '/Users/connorchurchill/Desktop/Projects/DeakCV/DeakCV/CV/wwwroot/Static/*.html'
+    '/Users/connorchurchill/Desktop/Projects/DeakCV/*.html'
   ],
   mode: 'jit',
   theme: {

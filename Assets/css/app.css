@@ -516,16 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 550px;
 }
 
-.min-h-\[250px\] {
-  min-height: 250px;
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .min-h-\[600px\] {
   min-height: 600px;
 }
 
-.min-h-\[125px\] {
-  min-height: 125px;
+.min-h-\[150px\] {
+  min-height: 150px;
 }
 
 .w-full {
@@ -556,6 +556,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 800px;
 }
 
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -575,6 +579,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -610,14 +618,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(46 139 192 / var(--tw-border-opacity));
+}
+
 .bg-\[\#D1D1D1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(209 209 209 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-darkBlue {
@@ -625,12 +633,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(12 45 72 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/Assets\/images\/HeroImage\.svg\'\)\] {
-  background-image: url('./Assets/images/HeroImage.svg');
-}
-
-.bg-\[url\(\'\.\/Assets\/images\/HeroImage\.jpg\'\)\] {
-  background-image: url('./Assets/images/HeroImage.jpg');
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-\[50px\] {
@@ -667,10 +672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -683,6 +684,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(46 139 192 / var(--tw-text-opacity));
 }
 
 .overline {

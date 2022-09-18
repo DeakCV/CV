@@ -4,24 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laszlo Deak</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/images/logo.png">
     <link href="./Tools/aos.min.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/app.css" rel="stylesheet" type="text/css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="preconnect" href="./Tools/fonts.min.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body x-data="homepage" class="overflow-x-hidden m-auto max-w-[1920px] bg-[#D1D1D1]">
-    <div class="w-full bg-darkBlue min-h-[125px] 
-    flex items-center justify-center uppercase font-medium overline text-[50px] text-center text-white px-sitepadding">
+    <div class="w-full bg-darkBlue min-h-[150px] 
+    flex items-center justify-start uppercase font-medium overline text-[50px] text-center text-white px-sitepadding">
+     <img src="./Assets/images/logo.png" alt="Icon" class="max-w-[100px]"/>
     </div>
 
     <div class="block overflow-hidden">
         <div class="flex-col m-auto flex items-center justify-center">
             <div class="max-h-[550px] overflow-hidden flex w-full items-center justify-center min-w-[1920px]">
                 <div class="relative flex justify-center items-center">
-                    <h1 class="absolute uppercase font-medium overline text-[50px] text-center text-white" data-aos="fade-down">Laszlo Deak</h1>
+                    <h1 class="absolute uppercase font-medium overline text-[50px] text-center text-white font-roboto" data-aos="fade-down">Laszlo Deak</h1>
                     <img src="./Assets/images/HeroImage.jpg" alt="HeroImage"/>
                 </div>
             </div>
@@ -35,7 +38,7 @@
     <div id="contents-container" class="-mt-[30px] bg-white px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row" :class="panel.PanelType">
-                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-red flex items-center justify-center border-red border-[3px] border-solid" :class="panel.PanelType">
+                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-blue flex items-center justify-center border-blue border-[3px] border-solid" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-black font-roboto" x-html="panel.PanelText"></p>
@@ -50,10 +53,15 @@
         </template>
     </div>
 
-    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-darkBlue text-white min-h-[125px] font-roboto">
+    <footer class="w-full px-sitepadding flex items-center justify-between bg-darkBlue text-white min-h-[100px] font-roboto">
         <p x-text="ContentBlocks[0].data.Footer"> </p>
     </footer>
 
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script>
     <script src="./Tools/showdown.min.js" defer></script>
     <script src="./Tools/axios.min.js" type="text/javascript" defer></script>
     <script src="./Tools/alpine.min.js" type="text/javascript" defer></script>

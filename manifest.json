@@ -1,0 +1,16 @@
+{
+    "name": "Lazslo Deak CV",
+    "short_name": "Lazslo Deak CV",
+    "start_url": "/?home=true",
+    "icons": [
+        {
+            "src": "./Assets/images/logo.png",
+            "type": "image/png",
+            "sizes": "175x175"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientatio9n": "portrait"
+}
