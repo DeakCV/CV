@@ -516,16 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 550px;
 }
 
-.min-h-\[100px\] {
-  min-height: 100px;
+.min-h-\[150px\] {
+  min-height: 150px;
 }
 
 .min-h-\[600px\] {
   min-height: 600px;
 }
 
-.min-h-\[150px\] {
-  min-height: 150px;
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .w-full {
@@ -548,16 +548,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1920px;
 }
 
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
 
 .max-w-\[800px\] {
   max-width: 800px;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
 }
 
 .flex-1 {
@@ -681,14 +681,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(46 139 192 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .overline {
@@ -705,10 +705,10 @@ html {
   flex: auto;
   margin: 50px 0px;
   font-size: x-large;
-  background-color: #BB1819;
+  background-color: #2E8BC0;
 }
 
-.FullWidth p{
+.FullWidth p, .FullWidth h2{
   color: white !important;
 }
 
